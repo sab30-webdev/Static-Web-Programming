@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./Home";
+import Training from "./Training";
+import { Route } from "react-router-dom";
+import firebaseApp from "./firebase";
+import firebase from "firebase/app";
+import withFirebaseAuth from "react-with-firebase-auth";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import "./App.css";
 
-function App() {
+const firebaseAppAuth = firebaseApp.auth();
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
+
+function App({ user, signOut, signInWithGoogle }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {user ? (
+        <>
+          <Navbar signOut={signOut} />
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/training">
+            <Training user={user} />
+          </Route>
+          <Footer />
+        </>
+      ) : (
+        <div className="signin-button">
+          <button
+            type="button"
+            className="button google-button"
+            onClick={signInWithGoogle}
+          >
+            Sign in with Google
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
-export default App;
+export default withFirebaseAuth({
+  providers,
+  firebaseAppAuth,
+})(App);

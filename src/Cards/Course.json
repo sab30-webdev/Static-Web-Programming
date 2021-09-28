@@ -1,0 +1,24 @@
+{
+  "courses": [
+    {
+      "courseName": "HAZOP Leadership Training For Engineers 1",
+      "price": "FREE"
+    },
+    {
+      "courseName": "HAZOP Leadership Training For Engineers 2",
+      "price": "FREE"
+    },
+    {
+      "courseName": "HAZOP Leadership Training For Engineers 3",
+      "price": "PAID"
+    },
+    {
+      "courseName": "HAZOP Leadership Training For Engineers 4",
+      "price": "PAID"
+    },
+    {
+      "courseName": "HAZOP Leadership Training For Engineers 5",
+      "price": "PAID"
+    }
+  ]
+}

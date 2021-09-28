@@ -1,38 +1,307 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.button {
+  background: #a51a33;
+  width: 108px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text-center {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid white;
+}
+
+.nav-div {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 65px;
+  background: #25256e;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-item {
+  font-weight: 500;
+  text-decoration: None;
+  color: white;
+}
+
+.nav-item:hover {
+  background: #a51a33;
+}
+
+/* main 1 */
+
+.main {
+  height: 90vh;
+}
+
+.main-img {
+  background: url(https://res.cloudinary.com/sharonnt/image/upload/v1535301352/hero-1920.jpg)
+    0 0 / cover no-repeat;
+  width: 100%;
+  color: white;
+}
+
+.main-text {
+  padding: 80px;
+}
+
+.main-text p {
+  padding-top: 20px;
+}
+
+/* section 2 */
+
+.brand-icon-div {
+  margin-top: 50px;
+  background: white;
+  color: black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 95px;
+}
+
+.icon-box img {
+  width: 105px;
+}
+
+.main-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.main-2-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 400px;
+}
+
+.main-2-text h2 {
+  color: #25256e;
+}
+
+/* section 3  */
+
+.main-3 {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  color: white;
+}
+
+.main-3 .left-div {
+  width: 25%;
+  background-color: #25256e;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.left-div div {
+  border-bottom: 1px solid white;
+}
+
+.main-3 .right-div {
+  width: 75%;
+  position: relative;
+}
+
+.right-div-img {
+  background: url(https://www.austintec.com/wp-content/uploads/2019/04/types-of-engineers.jpg)
+    0 0 / cover no-repeat;
+  width: 100%;
+  color: white;
+}
+
+.right-div .right-div-text {
+  width: 60%;
+  padding: 40px 0 0 30px;
+}
+
+/* section 4 */
+
+.main-4 {
+  height: 60vh;
+  position: relative;
+  background: #d6f2ff;
+}
+
+.main-4-container {
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+}
+
+.box-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box {
+  background: url(https://straumannprod-h.assetsadobe2.com/is/image/content/dam/sites/group/xy/home/illustrations/icon-cards/Icon_Innovation.jpg?wid=320)
+    0 0 / cover no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+
+/* section 5 */
+
+.main-5 {
+  height: 90vh;
+}
+
+.carousel {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.main-5 p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main-5 h2 {
+  color: #a51a33;
+}
+
+/* section 6*/
+
+.main-6 {
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-6-left {
+  background: white;
+  width: 25%;
+  flex-direction: column;
+  background: #25256e;
+  color: white;
+}
+
+.main-6-right {
+  width: 75%;
+  background: #d6f2ff;
+}
+
+.social-div img {
+  width: 25px;
+  margin: 10px 10px;
+  color: white;
+}
+
+.links-container {
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+}
+
+.links-container div {
+  padding: 8px;
+}
+
+.links-container p {
+  margin-bottom: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.links-container .button {
+  display: inline-block;
+  height: 40px;
+}
+.links-container .email-input {
+  height: 40px;
+}
+
+/* cards */
+
+.cards-parent {
+  margin: 25px;
+}
+
+.cards-div {
+  width: 76vw;
+  margin: auto !important;
+}
+
+.card {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  width: 40px;
+  height: 40px;
+  background: #a51a33 !important;
+}
+
+.signin-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #25256e;
+}
+
+.google-button {
+  width: 130px;
+  height: 55px;
+  border: 1px solid white;
+}
+
+.landing-training {
+  background: #25256e;
+  width: 100%;
+  color: white;
+}
+
+.search-div {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+}
+
+.search {
+  border: 0px;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 250px;
+}
+
+.search-img {
+  position: relative;
+  margin-left: 155px;
+  width: 30px;
 }
