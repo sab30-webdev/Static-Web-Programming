@@ -1,13 +1,30 @@
-import { useState } from "react";
-import courses from "./Course.json";
+import { useState, useEffect } from "react";
 import CourseCard from "./CourseCard";
+import { db } from "../firebase";
 
 const Cards = ({ user, search }) => {
-  console.log(user);
-  const [data, setData] = useState(courses.courses);
+  const [data, setData] = useState([]);
+  const [refresh, setRefresh] = useState(false);
 
-  const getData = (d) => {
-    setData([...data, d]);
+  useEffect(() => {
+    async function fetchData() {
+      await db
+        .collection("courses")
+        .get()
+        .then((snapshot) => {
+          let list = [];
+          snapshot.forEach((doc) => {
+            list.push(doc.data());
+          });
+          setData(list);
+        });
+    }
+    fetchData();
+  }, [refresh]);
+
+  const getData = async (d) => {
+    await db.collection("courses").add(d);
+    setRefresh(!refresh);
   };
 
   return (

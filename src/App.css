@@ -51,7 +51,7 @@
 }
 
 .main-img {
-  background: url(https://res.cloudinary.com/sharonnt/image/upload/v1535301352/hero-1920.jpg)
+  background: url(https://lh3.googleusercontent.com/qilLLeZXbdgjZj45iXv3pVIHzhdm7trabdWFvCz8XNbuOFej_s7kOwxlfUN_Oo9Vn8NCVeP_GGwRQT4sliJR=w1920-h838-rw)
     0 0 / cover no-repeat;
   width: 100%;
   color: white;
@@ -149,7 +149,12 @@
 .main-4 {
   height: 60vh;
   position: relative;
-  background: #d6f2ff;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 221, 245),
+    rgb(110, 139, 195)
+  );
+  color: white;
 }
 
 .main-4-container {
@@ -304,4 +309,73 @@
   position: relative;
   margin-left: 155px;
   width: 30px;
+}
+
+.down-arrow img {
+  width: 22px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.main-7 {
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 221, 245),
+    rgb(110, 139, 195)
+  );
+}
+
+.main-7 div {
+  margin-top: 0px;
+  width: 125px;
+}
+
+.main-8 {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 221, 245),
+    rgb(110, 139, 195)
+  );
+  height: 20vh;
+}
+
+.main-8 .verify {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.verify input {
+  height: 40px;
+}
+
+.verify .button {
+  height: 40px;
+  margin-top: 0px;
+}
+
+.verify-text {
+  margin-left: 15px;
+  margin-top: 18px;
+}
+
+.main-9 {
+  height: 60vh;
+  position: relative;
+  background: #25256e;
+  color: white;
+}
+
+.main-9-container {
+  width: 80%;
+  height: 80%;
+  z-index: 2;
 }

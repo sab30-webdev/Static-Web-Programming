@@ -1,6 +1,6 @@
 import { Carousel } from "react-bootstrap";
 
-const Home = ({ signOut }) => {
+const Home = () => {
   return (
     <div className="home-div">
       <section className="main main-img">
@@ -128,6 +128,10 @@ const Home = ({ signOut }) => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+      </section>
+      <section className="main-7">
+        <h2>Have a project ?</h2>
+        <div className="button">ENQUIRY FORM</div>
       </section>
     </div>
   );
