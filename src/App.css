@@ -51,8 +51,7 @@
 }
 
 .main-img {
-  background: url(https://lh3.googleusercontent.com/qilLLeZXbdgjZj45iXv3pVIHzhdm7trabdWFvCz8XNbuOFej_s7kOwxlfUN_Oo9Vn8NCVeP_GGwRQT4sliJR=w1920-h838-rw)
-    0 0 / cover no-repeat;
+  background: url("./assets/bg.jpeg") 0 0 / cover no-repeat;
   width: 100%;
   color: white;
 }
