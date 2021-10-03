@@ -44,6 +44,17 @@
   background: #a51a33;
 }
 
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone-text {
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+
 /* main 1 */
 
 .main {

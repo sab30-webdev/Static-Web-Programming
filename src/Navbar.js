@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 const Navbar = ({ signOut }) => {
   return (
     <nav className="nav">
+      <div className="phone">
+        <p className="phone-text">+91 99999 99999</p>
+      </div>
       <div className="nav-div">
         <Link className="nav-item center" to="/">
           ABOUT
