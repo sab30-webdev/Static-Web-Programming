@@ -12,6 +12,29 @@ const CourseCard = ({ courseName, price, getData }) => {
     <>
       {courseName ? (
         <Card style={{ width: "18rem" }} className="col-4 card center">
+          <div style={{ width: "100%" }}>
+            <p
+              className="float-right"
+              style={{
+                display: "inline-block",
+                fontWeight: "500",
+                fontSize: "12px",
+              }}
+            >
+              INDUSTRY
+            </p>
+            <p
+              className="float-end"
+              style={{
+                fontWeight: "500",
+                fontSize: "12px",
+                marginBottom: "0px",
+                marginTop: "6px",
+              }}
+            >
+              STATUS
+            </p>
+          </div>
           <Card.Img
             variant="top"
             src="https://www.austintec.com/wp-content/uploads/2019/04/types-of-engineers.jpg"
