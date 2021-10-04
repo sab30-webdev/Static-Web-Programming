@@ -303,9 +303,13 @@
   color: white;
 }
 
-.search-div {
+.search-box {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.search-div {
+  margin-left: 50px;
 }
 
 .search {
@@ -316,8 +320,8 @@
 }
 
 .search-img {
-  position: relative;
-  margin-left: 155px;
+  /* position: relative;
+  margin-left: 155px; */
   width: 30px;
 }
 

@@ -14,19 +14,21 @@ const Training = ({ user }) => {
             accumsan in nisl nisi. Aliquet nec ullamcorper sit amet. Nibh cras
             pulvinar mattis nunc sed blandit libero.
           </p>
-          <div className="button">PROJECTS</div>
-          <div className="brand-icon-div search-div">
-            <img
-              src="https://img.icons8.com/ios-filled/50/000000/search--v1.png"
-              className="search-img"
-              alt="search-img"
-            />
-            <input
-              className="search float-start"
-              type="text"
-              placeholder="Search"
-              onChange={(e) => setSearch(e.target.value)}
-            />
+          <div className="button">PRE REGISTER</div>
+          <div className="brand-icon-div search-box">
+            <div className="search-div">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/search--v1.png"
+                className="search-img"
+                alt="search-img"
+              />
+              <input
+                className="search float-start"
+                type="text"
+                placeholder="Search"
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </div>
             <div className="center down-arrow">
               <p>Industry</p>
               <img

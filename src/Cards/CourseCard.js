@@ -18,8 +18,18 @@ const CourseCard = ({ courseName, price, getData }) => {
           />
           <Card.Body>
             <Card.Text>{courseName}</Card.Text>
-            <Card.Text className="float-start">{price}</Card.Text>
-            <Card.Text className="float-end">PRE BOOK</Card.Text>
+            <Card.Text className="float-start" style={{ fontWeight: "bold" }}>
+              Price : {price}
+            </Card.Text>
+            <Card.Text
+              className="float-end"
+              style={{
+                background: "#ffebeb",
+                padding: "5px",
+              }}
+            >
+              PRE BOOK
+            </Card.Text>
           </Card.Body>
         </Card>
       ) : (
